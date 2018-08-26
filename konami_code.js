@@ -21,6 +21,9 @@ function init() {
     }
     if (next_key === codes.length) {
       alert('+30 Karma')
+      var karma = document.querySelector('#js--karma-points-count')
+      karma.innerHTML = parseInt(karma.innerHTML) + 30
+      next_key = 0
     }
   })
 }
