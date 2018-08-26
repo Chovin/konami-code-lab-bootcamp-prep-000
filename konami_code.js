@@ -14,9 +14,10 @@ const codes = [
 function init() {
   var next_key = 0
   document.body.addEventListener('keydown',
-  (function() {
-    var next_key = 0
-    return function(e) {
+  // (function() {
+  //   var mext_key = 0
+  //   return 
+    function(e) {
       if (e.key === codes[next_key]) {
         next_key += 1
       } else {
@@ -29,5 +30,6 @@ function init() {
         next_key = 0
       }
     }
-  })())
+  //})()
+  )
 }
