@@ -12,10 +12,10 @@ const codes = [
 ];
 
 function init() {
-  var mext_key = 0
+  var next_key = 0
   document.body.addEventListener('keydown',
   (function() {
-    var mext_key = 0
+    var next_key = 0
     return function(e) {
       if (e.key === codes[next_key]) {
         next_key += 1
