@@ -14,9 +14,6 @@ const codes = [
 function init() {
   var next_key = 0
   document.body.addEventListener('keydown',
-  // (function() {
-  //   var mext_key = 0
-  //   return
     function(e) {
       console.log(e.key)
       console.log(next_key)
@@ -31,7 +28,5 @@ function init() {
         karma.innerHTML = parseInt(karma.innerHTML) + 30
         next_key = 0
       }
-    }
-  //})()
-  )
+    })
 }
